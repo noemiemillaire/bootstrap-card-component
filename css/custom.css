@@ -1,0 +1,46 @@
+:root {
+  /* colors set */
+  --bs-primary: rgb(115, 97, 158);
+  --bs-secondary: rgb(108, 117, 125);
+  --bs-light: rgb(222, 226, 232);
+  --bs-dark: rgb(51, 58, 62);
+
+  /* rgb colors set */
+  --bs-primary-rgb: 115, 97, 158;
+  --bs-secondary-rgb: 108, 117, 125;
+  --bs-light-rgb: 201, 201, 207;
+  --bs-dark-rgb: 51, 58, 62;
+
+  /* nav */
+  --bs-link-color: rgb(115, 97, 158);
+  --bs-link-hover-color: rgb(108, 117, 125);
+  --bs-emphasis-color: var(--bs-dark);
+  --bs-nav-link-padding-x: 20px;
+
+  /* spacing */
+  --bs-spacing: 20px;
+
+  --bs-border-radius: 0;
+}
+
+.nav {
+  --bs-nav-link-padding-x: var(--bs-spacing);
+}
+
+.nav-link {
+  background-color: var(--bs-light);
+}
+
+.list-group {
+  --bs-list-group-item-padding-x: var(--bs-spacing);
+  --bs-list-group-color: var(--bs-primary);
+  --bs-list-group-active-color: var(--bs-black);
+}
+
+.card {
+  --bs-card-cap-padding-x: var(--bs-spacing);
+}
+
+.text-wrap {
+  padding-left: var(--bs-spacing);
+}
