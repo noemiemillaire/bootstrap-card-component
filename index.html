@@ -9,27 +9,24 @@
 </head>
 <body>
   <div class="container py-5">
-    <div class="card mx-auto" style="max-width: 600px;">
+    <div class="card mx-auto overflow-hidden" style="max-width: 600px;">
       <!-- Card Header -->
-      <div class="card-header pt-3 text-white bg-dark">
-        <ul class="nav nav-tabs gap-2 card-header-tabs " id="cardTabs" role="tablist">
+      <div class="card-header pt-0 bg-light">
+        <ul class="nav nav-tabs card-header-tabs " id="cardTabs" role="tablist">
           <li class="nav-item" role="presentation">
-            <button class="nav-link active border-0" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1" aria-selected="true">
-              Tab 1
+            <button class="nav-link active border-end" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1" aria-selected="true">
+              Board
             </button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link border-0" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-controls="tab2" aria-selected="false">
-              Tab 2
+            <button class="nav-link" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-controls="tab2" aria-selected="false">
+              Favorites
             </button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link border-0" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab" aria-controls="tab3" aria-selected="false">
-              Tab 3
+            <button class="nav-link" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab" aria-controls="tab3" aria-selected="false">
+              Archives
             </button>
-          </li>
-          <li class="nav-item" role="presentation">
-          <a class="nav-link disabled border-0 bg-secondary text-white" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </li>
         </ul>
       </div>
@@ -38,25 +35,28 @@
         <div class="tab-content">
           <!-- TAB 1 CONTENT -->
           <div class="tab-pane show active pt-4" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
-                <div class="text-wrap">
-                  <h5>Tab 1 Title</h5>
+                <div class="text-wrap pb-3 ">
+                  <h5 class="m-0 fw-normal">Tab 1 Title</h5>
                   <p class="text-muted">Subtitle for Tab 1</p>
                 </div>
             <div class="row g-3 w-100 p-0 m-0 align-items-stretch">
                 <!-- Column 1: List (Tab Controls) -->
                 <div class="col-12 col-md-6 p-0 m-0 h-auto">
-                  <ul class="list-group d-flex h-100" id="imageList" role="tablist">
-                    <button class="list-group-item active bg-white flex-fill d-flex align-items-center border-light border-start-0 border-end-0" 
+                  <ul class="list-group list-group-item-action d-flex h-100" id="imageList" role="tablist">
+                    <button class="list-group-item list-group-item-action active flex-fill d-flex justify-content-center flex-column  border-start-0 border-end-0" 
                         data-bs-toggle="tab" data-bs-target="#image1" role="tab" aria-controls="image1" aria-selected="true">
                       An Item
+                      <small>small description</small>
                   </button>
-                    <button class="list-group-item bg-white flex-fill d-flex align-items-center border-light border-start-0 border-end-0" 
+                    <button class="list-group-item list-group-item-action flex-fill d-flex  justify-content-center flex-column border-start-0 border-end-0" 
                         data-bs-toggle="tab" data-bs-target="#image2" role="tab" aria-controls="image2" aria-selected="false">
                       A Second Item
+                      <small>small description</small>
                 </button>
-                    <button class="list-group-item bg-white flex-fill d-flex align-items-center border-light border-start-0 border-end-0" 
+                    <button class="list-group-item list-group-item-action flex-fill d-flex justify-content-center flex-column border-start-0 border-end-0 border-bottom-0" 
                         data-bs-toggle="tab" data-bs-target="#image3" role="tab" aria-controls="image3" aria-selected="false">
                       A Third Item
+                      <small>small description</small>
             </button>
                   </ul>
                 </div>
@@ -65,13 +65,13 @@
                 <div class="col-12 col-md-6 p-0 m-0 overflow-hidden">
                   <div class="tab-content h-100">
                     <div class="tab-pane show active h-100" id="image1" role="tabpanel" aria-labelledby="image1-tab">
-                      <img src="https://placehold.co/300x200/808080/FFF?text=image" class="img-fluid w-100 h-100 object-fit-cover" alt="Image 1">
+                      <img src="https://placehold.co/300x250/808080/FFF?text=image" class="img-fluid w-100 h-100 object-fit-cover" alt="Image 1">
                     </div>
                     <div class="tab-pane h-100" id="image2" role="tabpanel" aria-labelledby="image2-tab">
-                      <img src="https://placehold.co/300x200/FFC0CB/FFF?text=image" class="img-fluid w-100 h-100 object-fit-cover" alt="Image 2">
+                      <img src="https://placehold.co/300x250/FFC0CB/FFF?text=image" class="img-fluid w-100 h-100 object-fit-cover" alt="Image 2">
                     </div>
                     <div class="tab-pane h-100" id="image3" role="tabpanel" aria-labelledby="image3-tab">
-                      <img src="https://placehold.co/300x200/0000FF/FFF?text=image" class="img-fluid w-100 h-100 object-fit-cover" alt="Image 3">
+                      <img src="https://placehold.co/300x250/0000FF/FFF?text=image" class="img-fluid w-100 h-100 object-fit-cover" alt="Image 3">
                     </div>
                   </div>
                 </div>
@@ -107,8 +107,8 @@
           </div>
       </div>
       <!-- Card Footer -->
-      <div class="card-footer py-3 text-white bg-dark">
-        2 days ago
+      <div class="card-footer py-3 px-3 text-end border-0 text-white bg-primary">
+        Learn More
       </div>
     </div>
   </div>

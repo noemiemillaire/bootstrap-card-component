@@ -1,44 +1,77 @@
 :root {
   /* colors set */
-  --bs-primary: rgb(115, 97, 158);
-  --bs-secondary: rgb(108, 117, 125);
-  --bs-light: rgb(222, 226, 232);
-  --bs-dark: rgb(51, 58, 62);
+  --bs-primary: rgb(116, 78, 106);
+  --bs-secondary: rgb(108, 109, 110);
+  --bs-light: rgb(249, 250, 251);
+  --bs-dark: rgb(236, 237, 239);
+  --bs-emphasis-color: rgb(122, 72, 108);
+  --bs-gray: rgb(196, 196, 197);
 
   /* rgb colors set */
-  --bs-primary-rgb: 115, 97, 158;
-  --bs-secondary-rgb: 108, 117, 125;
-  --bs-light-rgb: 201, 201, 207;
-  --bs-dark-rgb: 51, 58, 62;
+  --bs-primary-rgb: 116, 78, 106;
+  --bs-secondary-rgb: 108, 109, 110;
+  --bs-light-rgb: 249, 250, 251;
+  --bs-dark-rgb: 236, 237, 239;
 
   /* nav */
-  --bs-link-color: rgb(115, 97, 158);
+  --bs-link-color: var(--bs-secondary);
   --bs-link-hover-color: rgb(108, 117, 125);
-  --bs-emphasis-color: var(--bs-dark);
   --bs-nav-link-padding-x: 20px;
+  --bs-nav-font-weight: 600;
 
   /* spacing */
-  --bs-spacing: 20px;
+  --bs-spacing: 15px;
+  --bs-border-radius: 13px;
 
-  --bs-border-radius: 0;
+  --bs-border-color: var(--bs-gray);
 }
 
 .nav {
-  --bs-nav-link-padding-x: var(--bs-spacing);
+  --bs-nav-link-padding-x: 2rem;
+  --bs-nav-link-padding-y: 0.75rem;
+  --bs-nav-link-hover-color: var(--bs-primary);
+}
+
+.nav-tabs {
+  --bs-nav-tabs-border-radius: 0;
+  --bs-nav-tabs-link-hover-border-color: var(--bs-border-color)
+    var(--bs-border-color) var(--bs-border-color);
 }
 
 .nav-link {
-  background-color: var(--bs-light);
+  background-color: var(--bs-dark);
+  font-weight: var(--bs-nav-font-weight);
+}
+
+.nav-tabs .nav-link {
+  border: var(--bs-nav-tabs-border-width) solid var(--bs-border-color);
+  border-top: none;
+}
+
+.nav-tabs .nav-link:first-child {
+  border-left: none;
 }
 
 .list-group {
   --bs-list-group-item-padding-x: var(--bs-spacing);
   --bs-list-group-color: var(--bs-primary);
   --bs-list-group-active-color: var(--bs-black);
+  --bs-list-group-active-bg: var(--bs-dark);
+  --bs-border-radius: 0;
+  --bs-list-group-border-color: var(--bs-border-color);
+  --bs-list-group-active-border-color: var(--bs-border-color);
+  --bs-list-group-action-hover-color: var(--bs-secondary);
+  --bs-list-group-action-hover-bg: var(--bs-body-bg);
+  --bs-list-group-item-padding-y: 0.8rem;
 }
 
 .card {
-  --bs-card-cap-padding-x: var(--bs-spacing);
+  --bs-card-cap-padding-x: 0px;
+  --bs-card-border-color: var(--bs-border-color);
+}
+
+.card-footer {
+  font-weight: var(--bs-nav-font-weight);
 }
 
 .text-wrap {
